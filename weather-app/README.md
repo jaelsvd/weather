@@ -143,3 +143,13 @@ const ExampleComponent: React.FC = () => {
 
 export default ExampleComponent;
 ```
+
+## TODO
+
+- [ ] Add Weather page
+- [ ] Select design
+- [ ] Define functionality
+- [ ] Search city: San Diego
+- [ ] Display weather information (temperature, humidity, wind speed, etc.)
+- [ ] Define components (Search bar, Weather card, etc.)
+- [ ] Add Weather API call
