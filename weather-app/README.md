@@ -12,7 +12,8 @@ npm install
 npm run dev
 ```
 
-
+## Weather API Information
+To get the weather information, this app uses the OpenWeatherMap API. You can get your API key by signing up at [OpenWeatherMap](https://home.openweathermap.org/users/sign_up).
 
 ## Create new react component
 
@@ -62,6 +63,9 @@ To set up styles using the BEM (Block Element Modifier) pattern with SASS, follo
 1. Create a `styles` directory in your `src` folder.
 2. Inside the `styles` directory, create a `main.scss` file.
 3. Import your component-specific SASS files into `main.scss`.
+4. https://getbem.com/ for more information on BEM pattern.
+
+```sh
 
 Example directory structure:Example `main.scss`:
 ```scss
