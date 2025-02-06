@@ -146,10 +146,12 @@ export default ExampleComponent;
 
 ## TODO
 
-- [ ] Add Weather page
-- [ ] Select design
-- [ ] Define functionality
-- [ ] Search city: San Diego
-- [ ] Display weather information (temperature, humidity, wind speed, etc.)
-- [ ] Define components (Search bar, Weather card, etc.)
-- [ ] Add Weather API call
+- [x] Add Weather page
+- [x] Select design
+- [x] Define functionality
+- [x] Search city: San Diego
+- [x] Display weather information (temperature, humidity, wind speed, etc.)
+- [x] Define components (Search bar, Weather card, etc.)
+- [x] Add Weather API call
+
+UI Design: https://codesandbox.io/p/sandbox/weather-app-html-css-n0zy9f?file=%2Fsrc%2Fstyle.css%3A49%2C1-50%2C1

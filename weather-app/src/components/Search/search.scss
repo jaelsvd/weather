@@ -1,0 +1,38 @@
+
+.search{
+  display: flex;
+  width: 80%;
+
+  &_input{
+    width: 100%;
+    height: 70px;
+    background: #EFEDFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+  }
+  
+    &_button{
+      height: 70px;
+      background: #4B3EAE;    
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-top-right-radius: 35px;
+      border-bottom-right-radius: 35px;
+    }
+  
+  &_wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    background: #EFEDFA;
+    border: 5px solid;
+
+    justify-content: center;
+    align-items: center;
+  }
+}

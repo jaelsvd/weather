@@ -7,30 +7,20 @@
         flex-direction: column;
     }
     &_content{
-        background: green;
+        background: #EFEDFA;
         height: 100%;
         width: 100%;
         display: flex;
         justify-content: center;
-        border: 5px solid red;
+       // border: 5px solid red;
         flex-direction: column;
         gap: 11px;
         align-items: center;  
     }
 
     &_details{
+        color:black;
         background: yellow;
         width: 80%; 
-    }
-}
-
-.search{
-    &_wrapper{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        height: 70px;
-        background-color: purple;
-        border: 5px solid;
     }
 }
