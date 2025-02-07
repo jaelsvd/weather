@@ -36,36 +36,37 @@ function Weather() {
             });
     };
 
-
     return (<>
       <div className="weather_card">
-       <div className="search_wrapper">
-        <Search  value={city}
-                 onChange={(e:any) => setCity(e.target.value)} onClick={handleSearch} />
-       </div>
-       <div className="weather_content">
-        <div className="weather_details">
-          <div className="weather_details--current">
-            <h2>{city}</h2>
-            <p>{weatherData?.main.humidity}</p>
-            <p>{weatherData?.main.feels_like}</p>
-            <p>{weatherData?.main.temp}</p>
-            <p>{weatherData?.clouds.all}</p>
-              <label>{error}</label>
+          <div className={"weather_wrapper"}>
+              <div className="search_wrapper">
+                  <Search  value={city}
+                           onChange={(e:any) => setCity(e.target.value)} onClick={handleSearch} />
+              </div>
+              <div className="weather_content">
+                  <div className="weather_details">
+                      <div className="weather_details--current">
+                          <h2>{city}</h2>
+                          <p>{weatherData?.main.humidity}</p>
+                          <p>{weatherData?.main.feels_like}</p>
+                          <p>{weatherData?.main.temp}</p>
+                          <p>{weatherData?.clouds.all}</p>
+                          <label>{error}</label>
+                      </div>
+                  </div>
+                  <div className="weather_details weather_details--daily">
+                      <h2>5 Day Forecast</h2>
+                      <div className="weather_details--daily__item">
+                          <h2>{city}</h2>
+                          <p>{weatherData?.main.humidity}</p>
+                          <p>{weatherData?.main.feels_like}</p>
+                          <p>{weatherData?.main.temp}</p>
+                          <p>{weatherData?.clouds.all}</p>
+                          <label>{error}</label>
+                      </div>
+                  </div>
+              </div>
           </div>
-        </div>
-        <div className="weather_details weather_details--daily">
-          <h2>5 Day Forecast</h2>
-          <div className="weather_details--daily__item">
-              <h2>{city}</h2>
-              <p>{weatherData?.main.humidity}</p>
-              <p>{weatherData?.main.feels_like}</p>
-              <p>{weatherData?.main.temp}</p>
-              <p>{weatherData?.clouds.all}</p>
-              <label>{error}</label>
-          </div>
-        </div>
-       </div>
       </div>
     </>);
 }

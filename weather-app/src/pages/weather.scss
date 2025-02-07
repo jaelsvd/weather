@@ -1,13 +1,25 @@
 .weather{
+    
+    &_wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+    
     &_card{ 
         display: flex;
-        background: white;
+        background: #EFEDFA;
         height: 400px;
         min-width: 600px;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
+    
     &_content{
-        background: #EFEDFA;
+       // background: #EFEDFA;
         height: 100%;
         width: 100%;
         display: flex;
