@@ -11,7 +11,7 @@ html{
 }
 
 #root{
-  border:4px solid white;
+  //border:4px solid white;
   width: 100%;
   max-width: 1140px;
   flex:1;
@@ -29,13 +29,7 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(
-                  315deg,
-                  rgba(31, 26, 112, 1) 3%,
-                  rgba(80, 68, 176, 1) 24%,
-                  rgba(194, 189, 228, 1) 59%,
-                  rgba(75, 62, 174, 1) 93%
-  );
+  background: linear-gradient(45deg, rgba(161, 140, 209, 1), rgba(251, 194, 235, 1));
   font-family: "Nunito Sans", sans-serif;
   min-height: 100vh;
   //border: 5px solid red;
