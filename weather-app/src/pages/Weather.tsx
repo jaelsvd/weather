@@ -50,7 +50,7 @@ function Weather() {
                         <h2>{weatherData.name}</h2>
                         <div className="weather_content">
                             <div className="weather_details">
-                                <div className="weather_details--current">
+                                <div className="weather_details--current">                                    
                                     <p>Temperature: {weatherData.main.temp}</p>
                                     <p>Min Temp: {weatherData.main.temp_min}</p>
                                     <p>Max Temp: {weatherData.main.temp_max}</p>
