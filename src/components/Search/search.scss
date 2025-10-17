@@ -9,10 +9,10 @@
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #212529;
-    background-color: #ffffff;
+    color: #1088A0;
+    background-color: #EFFCFF;
     background-clip: padding-box;
-    border: 1px solid #ced4da;
+    border: 1px solid #1088A0;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -22,12 +22,12 @@
     
     &:hover> :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
       background: rgb(220, 216, 248);
-      color: #4b3eae;
+      color: #1088A0;
     }
   }
   
     &_button{
-      background: #4B3EAE;    
+      background: #1088A0;    
       display: flex;
       justify-content: center;
       align-items: center;

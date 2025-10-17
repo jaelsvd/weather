@@ -39,32 +39,37 @@ function Weather() {
     return (<>
         <div className="weather_card">
             <div className={"weather_wrapper"}>
-                <h1>Weather App</h1>
-                <p>Please enter a city in the United States, to look for the weather, at the moment this version only
-                    shows the weather in Celsius!</p>
+                <h1 className={"weather_title"}>Weather App</h1>
+                <br />
+                <p className={"weather_text"}>Please enter a city in the United States, to look for the weather, at the moment this version only
+                    shows the weather in <strong>Celsius!</strong> </p>
                 <div className="search_wrapper">
                     <Search value={city}
                             onChange={(e: any) => setCity(e.target.value)} onClick={handleSearch}/>
                 </div>
                 {weatherData && (<>
-                        <h2>{weatherData.name}</h2>
+                        <br />
+                        <div className="weather_pill">
+                            <p><strong>Temperature: {weatherData.main.temp}  C</strong> </p>
+                        </div>
+                        <br />
                         <div className="weather_content">
                             <div className="weather_details">
-                                <div className="weather_details--current">                                    
-                                    <p>Temperature: {weatherData.main.temp}</p>
-                                    <p>Min Temp: {weatherData.main.temp_min}</p>
-                                    <p>Max Temp: {weatherData.main.temp_max}</p>
-                                    <p>Humidity: {weatherData.main.humidity}</p>
-                                    <p>Feels Like: {weatherData.main.feels_like}</p>
+                                <div className="weather_details--current">        
+                                    <p><strong>🌡️ Min Temp:</strong>  {weatherData.main.temp_min}</p>
+                                    <p><strong>🔥 Max Temp:</strong>   {weatherData.main.temp_max}</p>
+                                    <p><strong>💧 Humidity:</strong>   {weatherData.main.humidity}</p>
+                                    <p><strong>🥶 Feels Like:</strong>   {weatherData.main.feels_like}</p>
                                     <label>{error}</label>
                                 </div>
                             </div>
+                            <br />
                             <div className="weather_details weather_details--daily">
                                 <div className="weather_details--daily__item">
-                                    <p>Clouds: {weatherData.clouds.all}</p>
-                                    <p>Pressure: {weatherData.main.pressure}</p>
-                                    <p>Ground Level: {weatherData.main.grnd_level}</p>
-                                    <p>Sea Level: {weatherData.main.sea_level}</p>
+                                    <p><strong>☀️ Clouds:</strong>   {weatherData.clouds.all}</p>
+                                    <p><strong>⚖️ Pressure:</strong>   {weatherData.main.pressure}</p>
+                                    <p><strong>🌎 Ground Level:</strong>   {weatherData.main.grnd_level}</p>
+                                    <p><strong>🌊 Sea Level:</strong>   {weatherData.main.sea_level}</p>
                                 </div>
                             </div>
                         </div>
