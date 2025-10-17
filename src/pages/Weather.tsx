@@ -47,8 +47,9 @@ function Weather() {
                     <Search value={city}
                             onChange={(e: any) => setCity(e.target.value)} onClick={handleSearch}/>
                 </div>
+
                 {weatherData && (<>
-                        <br />
+                        <hr className={"weather__divider"}/>
                         <div className="weather_pill">
                             <p><strong>Temperature: {weatherData.main.temp}  C</strong> </p>
                         </div>
